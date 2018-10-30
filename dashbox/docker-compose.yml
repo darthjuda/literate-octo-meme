@@ -4,6 +4,7 @@
 version: '3'
 
 services:
+  # database (stockage configuration user et param secure)
   db:
     labels: "Base de donnée"
     build: .
@@ -16,5 +17,5 @@ services:
 
 
 
-# rediriger le flux video vers sdout
-# -e "DISPLAY=unix${DISPLAY}" 
+# rediriger le flux video vers stdout
+# -e "DISPLAY=unix${DISPLAY}"
